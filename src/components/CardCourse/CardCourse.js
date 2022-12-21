@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container } from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -9,7 +9,7 @@ const CardCourse = ({ course }) => {
     const { name, img, id, details } = course;
     return (
         <div className='col-lg-6'>
-            <Row xs={1} md={1} className="g-1">
+            <Row xs={1} md={1}>
                 {Array.from({ length: 1 }).map((_, idx) => (
                     <Col>
                         <Card className='mt-2'>
@@ -19,7 +19,7 @@ const CardCourse = ({ course }) => {
                                 <Card.Text>
                                     {
                                         details?.length > 150 ?
-                                            <p>{details.slice(0, 150) + '...'} <Link to={`/details/${id}`}><Button variant="warning">Details</Button></Link></p>
+                                            <p style={{textAlign:'justify'}}>{details.slice(0, 150) + '...'} <Link to={`/details/${id}`}><Button variant="warning" size='sm'>Details</Button></Link></p>
                                             :
                                             <p>{details}</p>
                                     }
