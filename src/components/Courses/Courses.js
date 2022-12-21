@@ -1,15 +1,14 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import { Link, useLoaderData } from 'react-router-dom';
 import CardCourse from '../CardCourse/CardCourse';
 
 const Courses = () => {
     const courses = useLoaderData();
-    console.log(courses);
     return (
         <Container>
             <div className='d-flex'>
-                <div className='cardBody'>
+                <div className='cardBody row'>
                     {
                         courses.map(course => <CardCourse
                             key={course.id}
@@ -19,7 +18,7 @@ const Courses = () => {
                 </div>
                 <div>
                     {
-                        courses.map(course => <Link style={{ textDecoration: 'none' }} to={`/details/${course.id}`}><p style={{ border: '2px solid', width: '115px', height: '60px', padding: '5px', margin: '5px 0 0 5px', backgroundColor: 'lightBlue', fontWeight: 'bold', color: 'black' }}>{course.name}</p></Link>)
+                        courses.map(course => <Link style={{ textDecoration: 'none' }} to={`/details/${course.id}`}><Button className='btn btn-warning w-100 m-2' style={{height:'70px', fontWeight:'bold'}}>{course.name}</Button></Link>)
                     }
                 </div>
             </div>
