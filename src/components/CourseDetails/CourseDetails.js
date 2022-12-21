@@ -18,7 +18,7 @@ const CourseDetails = () => {
                     {({ toPdf }) => <Button className='mt-2 mb-2' variant="warning" onClick={toPdf}>Download PDF</Button>}
                 </Pdf>
                 <div ref={ref}>
-                    <Card className='w- mx-auto'>
+                    <Card className='mx-auto'>
                         <Card.Img variant="top" src={img}/>
                         <Card.Body>
                             <Card.Title>{name}</Card.Title>

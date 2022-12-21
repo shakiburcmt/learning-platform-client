@@ -18,7 +18,7 @@ const CardCourse = ({ course }) => {
                                 <Card.Title>{name}</Card.Title>
                                 <Card.Text>
                                     {
-                                        details?.length > 150 ?
+                                        details?.length > 200 ?
                                             <p style={{textAlign:'justify'}}>{details.slice(0, 150) + '...'} <Link to={`/details/${id}`}><Button variant="warning" size='sm'>Details</Button></Link></p>
                                             :
                                             <p>{details}</p>
