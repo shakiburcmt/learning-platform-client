@@ -8,14 +8,11 @@ export const ThemeContext = createContext(null);
 function App() {
   const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
-    // theme toggle here
     setTheme(current => (current === 'light' ? "dark" : 'light'))
   };
   return (
-    // this context is for theme with toggle
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
-        {/* from structured folder */}
         <RouterProvider router={routes}></RouterProvider>
       </div>
     </ThemeContext.Provider>

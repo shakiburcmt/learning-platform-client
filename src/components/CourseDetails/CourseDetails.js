@@ -19,10 +19,10 @@ const CourseDetails = () => {
                 </Pdf>
                 <div ref={ref}>
                     <Card className='mx-auto'>
-                        <Card.Img variant="top" src={img}/>
+                        <Card.Img variant="top" src={img} />
                         <Card.Body>
                             <Card.Title>{name}</Card.Title>
-                            <Card.Text style={{textAlign:'justify'}}>
+                            <Card.Text style={{ textAlign: 'justify' }}>
                                 {details}
                             </Card.Text>
                             <Link to={`/checkout/${id}`}><Button variant="warning">Get premium access</Button></Link>

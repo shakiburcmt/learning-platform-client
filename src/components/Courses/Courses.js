@@ -18,7 +18,7 @@ const Courses = () => {
                 </div>
                 <div>
                     {
-                        courses.map(course => <Link style={{ textDecoration: 'none' }} to={`/details/${course.id}`}><Button className='btn btn-warning w-100 m-2' style={{height:'70px', fontWeight:'bold'}}>{course.name}</Button></Link>)
+                        courses.map(course => <Link style={{ textDecoration: 'none' }} to={`/details/${course.id}`}><Button className='btn btn-warning w-100 m-2' style={{ height: '70px', fontWeight: 'bold' }}>{course.name}</Button></Link>)
                     }
                 </div>
             </div>

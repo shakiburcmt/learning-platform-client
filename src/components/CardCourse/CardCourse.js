@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -19,7 +19,7 @@ const CardCourse = ({ course }) => {
                                 <Card.Text>
                                     {
                                         details?.length > 200 ?
-                                            <p style={{textAlign:'justify'}}>{details.slice(0, 150) + '...'} <Link to={`/details/${id}`}><Button variant="warning" size='sm'>Details</Button></Link></p>
+                                            <p style={{ textAlign: 'justify' }}>{details.slice(0, 150) + '...'} <Link to={`/details/${id}`}><Button variant="warning" size='sm'>Details</Button></Link></p>
                                             :
                                             <p>{details}</p>
                                     }

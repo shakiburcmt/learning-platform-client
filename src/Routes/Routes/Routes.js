@@ -1,6 +1,7 @@
 import { createBrowserRouter, Link } from "react-router-dom";
 import Blog from "../../components/Blog/Blog";
 import CheckOut from "../../components/CheckOut/CheckOut";
+import Contact from "../../components/Contact/Contact";
 import CourseDetails from "../../components/CourseDetails/CourseDetails";
 import Courses from "../../components/Courses/Courses";
 import FAQ from "../../components/FAQ/FAQ";
@@ -32,6 +33,10 @@ export const routes = createBrowserRouter([
                 element: <Login></Login>
             },
             {
+                path: '/contact',
+                element: <Contact></Contact>
+            },
+            {
                 path: '/register',
                 element: <Register></Register>
             },
@@ -42,12 +47,12 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                loader: ({params})=>fetch(`https://b610-learning-platform-server-side.vercel.app/courses/${params.id}`),
+                loader: ({ params }) => fetch(`https://b610-learning-platform-server-side.vercel.app/courses/${params.id}`),
                 element: <CourseDetails></CourseDetails>
             },
             {
                 path: '/checkout/:id',
-                loader: ({params})=>fetch(`https://b610-learning-platform-server-side.vercel.app/checkout/${params.id}`),
+                loader: ({ params }) => fetch(`https://b610-learning-platform-server-side.vercel.app/checkout/${params.id}`),
                 element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>
             },
         ]

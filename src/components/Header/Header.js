@@ -41,6 +41,7 @@ const Header = () => {
                         <Nav.Link><Link style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }} to='/courses'>Courses</Link></Nav.Link>
                         <Nav.Link><Link style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }} to='/blog'>Blog</Link></Nav.Link>
                         <Nav.Link><Link style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }} to='/faq'>FAQ</Link></Nav.Link>
+                        <Nav.Link><Link style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }} to='/contact'>Contact</Link></Nav.Link>
                     </Nav>
                     <Nav>
                         {

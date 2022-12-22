@@ -5,6 +5,7 @@ import img1 from '../../assets/1.jpg'
 import img3 from '../../assets/3.jpg'
 import img6 from '../../assets/6.jpg'
 import Banner from '../Banner/Banner';
+import PopularCourses from '../PopularCourses/PopularCourses';
 
 
 const Home = () => {
@@ -48,6 +49,7 @@ const Home = () => {
                     }
                 </Carousel>
             </Container>
+            <PopularCourses></PopularCourses>
         </>
     );
 };

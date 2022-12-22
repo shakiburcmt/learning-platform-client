@@ -24,12 +24,13 @@
   color: white;
 }
 
-#light{
+#light {
   background-color: white;
 }
-#dark{
-  background-color: grey;
-  height: 500vh;
+
+#dark {
+  background-color: rgb(77, 170, 119);
+  height: full;
 }
 
 .App-link {
@@ -40,6 +41,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
